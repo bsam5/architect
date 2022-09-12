@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" b:js="false">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -779,11 +779,17 @@
     </footer>
     <!-- end footer -->
 
-    <script  src="js/bootstrap.bundle.min.js"></script>
-    <script  src="js/aos.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script  src="js/font-awesome.min.js"></script>
-    <script  src="js/fancybox.umd.js"></script>
-    <script  src="js/main-dist.js"></script>
+    <script>
+       $(window).on(" load ", function () {
+        $(" body ").append(` <script src = ' js/bootstrap.bundle.min.js ' > `);
+        $(" body ").append(" <script src = ' js/aos.js ' > ");
+        $(" body ").append(
+          " <script script src = ' js/font-awesome.min.js ' > "
+        );
+        $(" body ").append(" <script script src = ' js/fancybox.umd.js ' > ");
+        $(" body ").append(" <script script src = ' js/main-dist.js ' > ");
+      });
+    </script>
   </body>
 </html>

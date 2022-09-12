@@ -1,3 +1,6 @@
+
+
+
 function animateValue(obj, start, end, signal, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
