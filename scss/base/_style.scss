@@ -68,15 +68,18 @@ body {
       background-image: url("../images/architecture.webp");
     }
   }
-  #carouselExampleControls {
+
+  .mySwiper {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
   }
-  .carousel-inner {
+  .swiper-wrapper {
     max-width: 500px;
 
-    .carousel-item {
+    .swiper-slide {
       .title {
         font-family: $playFont;
         font-size: 50px;
@@ -90,25 +93,31 @@ body {
     left: 0;
     bottom: 0;
   }
-  .carousel-control-prev,
-  .carousel-control-next {
-    all: unset;
+  .swiper-next,
+  .swiper-prev {
+    user-select: none;
     padding: 0 25px;
     line-height: 80px;
     background: #fff;
     color: $redColor;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 @media (max-width: 767px) {
   .architecture {
-    .carousel-control-next,
-    .carousel-control-prev {
+    .swiper-next,
+    .swiper-prev {
       padding: 0 20px;
       line-height: 70px;
     }
-    .carousel-inner {
+    .swiper-wrapper {
       max-width: 380px;
-      .carousel-item {
+      .swiper-slide {
         .title {
           font-size: 40px;
         }
@@ -118,14 +127,14 @@ body {
 }
 @media (max-width: 425px) {
   .architecture {
-    .carousel-control-next,
-    .carousel-control-prev {
+    .swiper-next,
+    .swiper-prev {
       padding: 0 15px;
       line-height: 55px;
     }
-    .carousel-inner {
+    .swiper-wrapper {
       max-width: 320px;
-      .carousel-item {
+      .swiper-slide {
         .title {
           font-size: 28px;
         }

@@ -93,35 +93,18 @@
       <div class="img-slide">
         <div class="img">
           <div class="btn-group btn-slide" data-aos="fade-right">
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span class="">Next</span>
-            </button>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span class="">Previous</span>
-            </button>
+            <div class="swiper-next">next</div>
+            <div class="swiper-prev">prev</div>
           </div>
         </div>
       </div>
       <div class="container">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner" data-aos="fade-up">
-            <div class="carousel-item active">
+        <div class="swiper mySwiper" data-aos="fade-right">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <h1 class="title">
-                <span>Best Architecture <br /> </span> Company <i>For You</i>
+                <span>Best Architecture </span><br />
+                Company <i>For You</i>
               </h1>
               <p>
                 Far far away, behind the word mountains, far from the countries
@@ -131,21 +114,23 @@
                 Get Started
               </a>
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide">
               <h1 class="title">
-                <span>Best Architecture<br /></span> Company <i>For You</i>
+                <span>Experts and High </span><br />
+                <i>Quality Works</i>
               </h1>
               <p>
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
               </p>
-              <a href="#" class="btn btn-danger rounded-0 d-inline-block"
-                >Get Started</a
-              >
+              <a href="#" class="btn btn-danger rounded-0 d-inline-block">
+                Get Started
+              </a>
             </div>
-            <div class="carousel-item">
+            <div class="swiper-slide">
               <h1 class="title">
-                <span>Best Architecture<br /></span> Company <i>For You</i>
+                <span>We Are Building </span><br />
+                <i>For You</i>
               </h1>
               <p>
                 Far far away, behind the word mountains, far from the countries
@@ -778,17 +763,16 @@
       </div>
     </footer>
     <!-- end footer -->
-
+    <!-- Slider main container -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script>
-       $(window).on(" load ", function () {
-        $(" body ").append(` <script src = ' js/bootstrap.bundle.min.js ' > `);
-        $(" body ").append(" <script src = ' js/aos.js ' > ");
-        $(" body ").append(
-          " <script script src = ' js/font-awesome.min.js ' > "
-        );
-        $(" body ").append(" <script script src = ' js/fancybox.umd.js ' > ");
-        $(" body ").append(" <script script src = ' js/main-dist.js ' > ");
+      $(window).on(" load ", function () {
+        $(" body ").append("<script src = 'js/aos.js'>");
+        $(" body ").append("<script script src = 'js/bootstrap.bundle.min.js'>");
+        $(" body ").append("<script script src = 'js/font-awesome.min.js'>");
+        $(" body ").append("<script script src = 'js/fancybox.umd.js'>");
+        $(" body ").append("<script script src = 'js/swiper-bundle.min.js'>");
+        $(" body ").append("<script script src = 'js/main-dist.js'>");
       });
     </script>
   </body>

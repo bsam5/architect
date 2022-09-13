@@ -1,6 +1,5 @@
 
 
-
 function animateValue(obj, start, end, signal, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -18,15 +17,23 @@ const obj2 = document.getElementById("clients");
 const obj3 = document.getElementById("experience");
 
 
-
-
-
 $(function () {
-
 
     $(".loader").delay(0).fadeOut("slow");
     $("#layout").delay(0).fadeOut("slow");
 
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
+        },
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
     // show dropdown  
     $('.dropdown-toggle').mouseover(function () {
         $('.open').show();
