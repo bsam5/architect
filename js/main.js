@@ -60,7 +60,6 @@ $(function () {
         duration: 800,
         easing: "slide",
         once: true,
-        offset: 130,
     });
     // counters
     var flag = true;
